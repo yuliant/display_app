@@ -1,0 +1,305 @@
+.header {
+    background-size: cover;
+    background-position: center;
+    color: black;
+    padding: 20px 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.img-logo {
+    width: 100px; /* Adjust as needed */
+    height: auto;
+    max-width: 100%;
+    background-color: rgba(255, 255, 255, 0.1); /* Latar belakang semi-transparan */
+    padding: 5px 10px; /* Beri ruang di sekitar teks */
+    border-radius: 5px; /* Tambahkan sudut melengkung */      
+}
+.time-logo{
+    display: flex;
+}
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.5); /* Latar belakang semi-transparan */
+    padding: 5px 10px; /* Beri ruang di sekitar teks */
+    border-radius: 5px; /* Tambahkan sudut melengkung */      
+}
+
+.subtitle {
+    font-size: 18px;
+    margin-top: 5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.5); /* Latar belakang semi-transparan */
+    padding: 5px 10px; /* Beri ruang di sekitar teks */
+    border-radius: 5px; /* Tambahkan sudut melengkung */    
+}
+
+/* Mengatur ukuran teks untuk hour, day, dan date */
+.time{
+    background-color: rgba(255, 255, 255, 0.5); /* Latar belakang semi-transparan */
+    border-radius: 5px; /* Sudut border yang dibulatkan */
+    text-align: left; /* Teks di tengah */
+    font-family: 'Arial', sans-serif; /* Gaya font */    
+    min-height: 10vh; /* Tinggi minimum untuk Bagian 1 */
+    padding-left:1vw;   
+}
+.time .hour, .time .date, .time .day{
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);   
+}
+.time .hour { 
+    line-height: 1;
+    font-size: 2.5vw; /* Atur ukuran sesuai kebutuhan */
+}
+
+.time .day,
+.time .date {
+    line-height: 1;
+    font-size: 1.2vw; /* Ukuran yang lebih kecil */
+}
+
+/* Mengatur tata letak untuk Student of The Month */
+.student-of-the-month {
+    background-color: #f7f7f7; /* Latar belakang berwarna abu-abu muda */
+    padding-left:1vw;
+    border: 1px solid #ddd; /* Border tipis dengan warna abu-abu muda */
+    border-radius: 5px; /* Sudut border yang dibulatkan */    
+    display: flex; /* Menggunakan flexbox untuk mengatur gambar dan teks berdampingan */
+    align-items: center; /* Mengatur vertikal terpusat */
+    min-height: 10vh; /* Tinggi minimum untuk Bagian 1 */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.student-image {
+    flex: 0 0 auto; /* Gambar profil tetap di sisi kiri */
+    margin-right: 20px; /* Jarak antara gambar dan teks */
+}
+.student-image img {
+    border: 2px solid #333; /* Border tebal dengan warna gelap */  
+    height: 5vw; /* Menggunakan vw untuk ketinggian */
+    width: auto; /* Lebar mengikuti rasio aspek gambar */
+    max-width: 100%; /* Lebar maksimum agar gambar tidak melebihi kontainer */
+}
+
+.student-details {
+    flex: 1; /* Teks nama dan keterangan mengisi sisa ruang */
+    height: 5vw;
+}
+.student-name, .student-achievement {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    font-family: 'Arial', sans-serif; /* Gaya font */   
+}
+.student-name {
+    font-size: 1.5vw; /* Ukuran teks nama lebih besar */
+    font-weight: bold; /* Tebalkan teks nama jika perlu */
+    color: #333; /* Warna teks lebih gelap */
+}
+
+.student-achievement {
+    font-size: 1vw; /* Ukuran teks keterangan prestasi siswa */
+    color: #555; /* Warna teks sedikit lebih gelap */
+    line-height: 1;
+    word-wrap: break-word;
+}
+.card-event{
+    background-color: #f7f7f7; /* Latar belakang berwarna abu-abu muda */
+    height: 47.5vw;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd; /* Border tipis dengan warna abu-abu muda */
+}
+.card-messages{
+    background-color: #f7f7f7; /* Latar belakang berwarna abu-abu muda */
+    height: 40vw;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd; /* Border tipis dengan warna abu-abu muda */
+}
+.card-body-messages {  
+    height: 30vw;  
+    overflow: hidden;
+}
+.card-body-messages p {
+    margin: 0;
+    padding: 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    font-family: 'Arial', sans-serif; /* Gaya font */   
+}
+
+
+.table .table-pink th{
+    background-color: #DE3163!important;
+    color: white!important;
+}
+.time-table{
+    border: 1px solid #ddd; /* Border tipis dengan warna abu-abu muda */
+    height: 47.5vw;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);    
+}
+.ting-dps-2{
+    height: 44.5vw!important;
+}
+.event {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    font-family: 'Arial', sans-serif; /* Gaya font */   
+    height: 44.5vw;  
+    overflow: hidden;
+}
+.event p{
+    font-size: 1.2vw;
+}
+.event h2{
+    font-size: 1.5vw;
+}
+/* Style untuk bagian News Feed */
+.bawah-fix{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.news-feed-3 {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Style untuk bagian News Feed */
+.news-feed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Style untuk ikon News Feed */
+.news-feed-icon {
+    font-size: 2vw;
+    margin-right: 1vw;
+    margin-left:1vw;
+}
+
+/* Style untuk isi News Feed */
+.news-feed-content {
+    flex-grow: 1;
+}
+
+.full-height{
+    height: 100vh;
+    width:100%;
+}
+.transparan{
+    background-color: rgba( 18, 25, 56 , 0.5);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.hij-mas span{
+    line-height: 1;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    font-family: 'Arial', sans-serif; /* Gaya font */       
+}
+.hij-mas p{
+    margin:0;
+}
+.huruf-6{
+    font-size: 4vw;
+}
+.huruf-5{
+    font-size: 3.5vw;
+}
+.huruf-4{
+    font-size: 3vw;
+}
+.huruf-3{
+    font-size: 2.5vw;
+}
+.huruf-2{
+    font-size: 2vw;
+}
+.huruf-1{
+    font-size: 1.5vw;
+}
+.huruf-0{
+    font-size: 1.2vw;
+}
+.ln-1{
+    line-height: 1;
+}
+.display-header-title{
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    font-family: 'Arial', sans-serif; /* Gaya font */     
+}
+.garis-bawah {
+    border: none; /* Menghapus garis horizontal bawaan elemen <hr> */
+    border-bottom: 0.3vh solid white; /* Menambahkan garis bawah kustom */
+    margin: 0; /* Memberikan jarak atas dan bawah */
+}
+.time-3{
+    text-align: left; /* Teks di tengah */
+    font-family: 'Arial', sans-serif; /* Gaya font */    
+}
+.time-3 .hour{
+    color:white;
+    font-size: 2.5vw; /* Atur ukuran sesuai kebutuhan */    
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);   
+}
+.col-salat{
+    line-height: 1;
+    height: 20vh;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    font-family: 'Arial', sans-serif; /* Gaya font */
+}
+.bg-transparan-dark-green{
+    background-color: rgba(  12, 118, 34  , 0.7);
+}
+.bg-transparan-dark-red{
+    background-color: rgba(   185, 18, 46   , 0.7);
+}
+.bg-transparan-dark-orange{
+    background-color: rgba(    255, 195, 0    , 0.7);
+}
+.bg-transparan-light-green{
+    background-color: rgba(  27, 200, 108 , 0.7);
+}
+.bg-transparan-dark-magenta{
+    background-color: rgba( 168, 27, 200 , 0.7);
+}
+.bg-transparan-dark-blue{
+    background-color: rgba(  27, 90, 200  , 0.7);
+}
+.bg-transparan-dark-light{
+    background-color: rgba( 234, 234, 231 , 0.7);
+}
+.color-yelow{
+    color: #f1da48 ;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.color-white{
+    color:white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.color-black{
+    color:black;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+.col-info{
+    height: 5vh;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    font-family: 'Arial', sans-serif; /* Gaya font */    
+}
+
+.second-middle {
+    display: none;
+    justify-content: center; /* Menengahkan horizontal */
+    align-items: center; /* Menengahkan vertical */
+    height: 50vh; /* Menggunakan tinggi viewport untuk menengahkan elemen */
+}
