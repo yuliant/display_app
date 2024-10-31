@@ -9,23 +9,27 @@ use App\Events\PodcastProcessed;
 
 class UserController extends Controller
 {
-    Public function index(){
+    public function index()
+    {
         $users = User::all();
+        // dd($users);
         $title = "Data Users";
-        return view('user.index', compact('users','title'));
+        return view('user.index', compact('users', 'title'));
     }
-    public function show(string $id){
+    public function show(string $id)
+    {
         $title = "Detail Users";
         $user = User::findOrFail($id);
-        return view('user.show',compact('user','title'));
+        return view('user.show', compact('user', 'title'));
     }
-    public function edit(string $id){
+    public function edit(string $id)
+    {
         $title = "Edit Users";
         $user = User::findOrFail($id);
-        return view('user.edit',compact('user','title'));
+        return view('user.edit', compact('user', 'title'));
     }
-    public function update(Request $request, string $id){
-
+    public function update(Request $request, string $id)
+    {
         $validatedData = $request->validate([
             'name' => 'required',
             'email' => 'required|email|unique:users,email,' . $id,
@@ -35,22 +39,30 @@ class UserController extends Controller
         $user = User::findOrFail($id);
         $user->update($validatedData);
         event(new PodcastProcessed('success'));
-        return redirect()->route('users.data')->with('success', 'Employee updated successfully.');                
+        return redirect()->route('users.data')->with('success', 'Employee updated successfully.');
     }
-    public function create(){
+    public function create()
+    {
         $title = "Form Users";
-        return view('user.create',compact('title'));
+        return view('user.create', compact('title'));
     }
-    public function store(Request $request){
+    public function store(Request $request)
+    {
         $validatedData = $request->validate([
             'name' => 'required',
             'email' => 'required|email|unique:users,email,',
             'role' => 'required',
             'status' => 'required',
-            'password' => ['required', Password::min(6)]           
+            'password' => ['required', Password::min(6)]
         ]);
         User::create($validatedData);
         event(new PodcastProcessed('success'));
-        return redirect()->route('users.data')->with('success', 'User added successfully.');        
+        return redirect()->route('users.data')->with('success', 'User added successfully.');
+    }
+
+    public function delete(Request $request)
+    {
+        $coba = User::where('id', $request->id_user)->delete();
+        return redirect()->route('users.data')->with('success', 'Employee deleted successfully.');
     }
 }
